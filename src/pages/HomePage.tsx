@@ -3,7 +3,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import SEO from "@/components/SEO";
-import { Wifi, Pool, Home, MapPin } from "lucide-react";
+import { Wifi, Home, MapPin, Waves } from "lucide-react";
 
 const HomePage = () => {
   const { t } = useLanguage();
@@ -71,7 +71,7 @@ const HomePage = () => {
             <div className="bg-white p-6 rounded-lg shadow-soft hover-scale">
               <div className="flex flex-col items-center text-center">
                 <div className="bg-marea-100 p-3 rounded-full mb-4">
-                  <Pool className="w-6 h-6 text-marea-600" />
+                  <Waves className="w-6 h-6 text-marea-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{t('home.features.pool')}</h3>
                 <p className="text-gray-600">

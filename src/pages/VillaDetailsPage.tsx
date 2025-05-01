@@ -3,7 +3,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import SEO from "@/components/SEO";
-import { Wifi, Pool, Kitchen, ParkingMeter, Accessibility, Bed } from "lucide-react";
+import { Wifi, Utensils, ParkingSquare, Accessibility, Bed, Waves } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -16,9 +16,9 @@ const VillaDetailsPage = () => {
 
   const amenities = [
     { name: t('villaDetails.amenities.wifi'), icon: <Wifi /> },
-    { name: t('villaDetails.amenities.pool'), icon: <Pool /> },
-    { name: t('villaDetails.amenities.kitchen'), icon: <Kitchen /> },
-    { name: t('villaDetails.amenities.parking'), icon: <ParkingMeter /> },
+    { name: t('villaDetails.amenities.pool'), icon: <Waves /> },
+    { name: t('villaDetails.amenities.kitchen'), icon: <Utensils /> },
+    { name: t('villaDetails.amenities.parking'), icon: <ParkingSquare /> },
     { name: t('villaDetails.amenities.beach'), icon: <Accessibility /> },
     { name: t('villaDetails.amenities.ac'), icon: <Bed /> },
   ];
