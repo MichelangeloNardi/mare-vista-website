@@ -9,7 +9,7 @@ export const translations = {
     'nav.guestInfo': 'Guest Info',
     
     // Home Page
-    'home.title': 'Villa del Mare',
+    'home.title': 'Casa Zaratan',
     'home.subtitle': 'Luxury beachfront villa in Sardinia',
     'home.cta': 'Book Now',
     'home.description': 'Experience the beauty of Sardinia in our luxury beachfront villa. Located steps from pristine beaches with breathtaking views of the Mediterranean.',
@@ -28,7 +28,7 @@ export const translations = {
     // Villa Details Page
     'villaDetails.title': 'Villa Details',
     'villaDetails.overview': 'Villa Overview',
-    'villaDetails.description': 'Villa del Mare is a luxury beachfront property with spectacular sea views. The villa features spacious living areas, modern amenities, and direct access to pristine beaches.',
+    'villaDetails.description': 'Casa Zaratan is a luxury beachfront property with spectacular sea views. The villa features spacious living areas, modern amenities, and direct access to pristine beaches.',
     'villaDetails.amenities.title': 'Amenities',
     'villaDetails.amenities.wifi': 'High-speed WiFi',
     'villaDetails.amenities.pool': 'Private Pool',
@@ -50,7 +50,7 @@ export const translations = {
     'villaDetails.rooms.kitchen': 'Kitchen',
     'villaDetails.rooms.kitchen.description': 'Modern, fully-equipped kitchen with high-end appliances and dining area.',
     'villaDetails.accessibility.title': 'Accessibility',
-    'villaDetails.accessibility.description': 'Villa del Mare is designed to be accessible to all our guests. The ground floor is wheelchair accessible with step-free access from the parking area. The main bedroom and bathroom on the ground floor are equipped with accessibility features.',
+    'villaDetails.accessibility.description': 'Casa Zaratan is designed to be accessible to all our guests. The ground floor is wheelchair accessible with step-free access from the parking area. The main bedroom and bathroom on the ground floor are equipped with accessibility features.',
     
     // Gallery Page
     'gallery.title': 'Photo Gallery',
@@ -78,6 +78,20 @@ export const translations = {
     'booking.form.submit': 'Book Now',
     'booking.form.termsAgree': 'I agree to the terms and conditions',
     
+    // House Rules
+    'houseRules.title': 'House Rules',
+    'houseRules.subtitle': '10 simple rules to follow to fully enjoy your stay and enjoy the magic of the place',
+    'houseRules.rule1': 'Do not sit on sofas and armchairs with wet suits/clothes/towels',
+    'houseRules.rule2': 'Take a shower before entering the pool so as not to bring sunscreen, sand or other dirt',
+    'houseRules.rule3': 'Rewind the curtain if you are not at home; the wind can suddenly rise and tear it',
+    'houseRules.rule4': 'Turn off the air conditioning and lights when you\'re not home or when you don\'t need them',
+    'houseRules.rule5': 'Close the windows if the air conditioning is on',
+    'houseRules.rule6': 'After 11 pm respect the sleep of the neighbours and the tranquillity of the place',
+    'houseRules.rule7': 'MAKE A SEPARATE COLLECTION: place the bins outside the portal on the days indicated in the calendar. A penalty of €100 will be applied if guests leave garbage in the house or leave the stove dirty. The sign with the precise days of the collection is available in the house',
+    'houseRules.rule8': 'The house is non-smoking',
+    'houseRules.rule9': 'Consume ecologically: do not waste water and electricity',
+    'houseRules.rule10': '€20 per person per stay for bed linen and towels to be paid separately in cash upon check-in',
+    
     // Guest Info Page
     'guestInfo.title': 'Guest Information',
     'guestInfo.checkIn.title': 'Check-in & Check-out',
@@ -93,11 +107,21 @@ export const translations = {
     'guestInfo.cancellation.description': 'Free cancellation up to 30 days before check-in. If cancelled less than 30 days before check-in, 50% of the total amount will be refunded.',
     'guestInfo.localGuide.title': 'Local Guide',
     'guestInfo.localGuide.beaches.title': 'Best Beaches',
-    'guestInfo.localGuide.beaches.description': 'Explore the beautiful beaches nearby, including La Pelosa, Cala Brandinchi, and Lu Impostu.',
+    'guestInfo.localGuide.beaches.description': 'Explore the beautiful beaches nearby, including Bados, Cala Moresca, and Costa Smeralda: Capriccioli.',
     'guestInfo.localGuide.restaurants.title': 'Recommended Restaurants',
-    'guestInfo.localGuide.restaurants.description': 'Experience local cuisine at our recommended restaurants, including La Pinnetta, Il Pescatore, and Da Tonino.',
+    'guestInfo.localGuide.restaurants.description': 'Experience local cuisine at our recommended restaurants in Pittulongu, Golfo Aranci, Olbia, and San Pantaleo.',
     'guestInfo.localGuide.attractions.title': 'Local Attractions',
-    'guestInfo.localGuide.attractions.description': 'Visit the ancient ruins of Tharros, take a boat trip to La Maddalena Archipelago, or explore the caves of Neptune.',
+    'guestInfo.localGuide.attractions.description': 'Take boat tours to Tavolara Island or explore the beautiful beaches of Sardinia.',
+    
+    // History Section
+    'history.title': 'The History of Zaratan',
+    'history.description': 'Learn about the legendary sea monster that inspired the villa\'s name.',
+    
+    // Local Services
+    'services.title': 'Local Services & Shopping',
+    'services.nearby': 'Little grocery within walking distance',
+    'services.gallura': 'Centro commerciale Gallura: 7 minutes by car',
+    'services.terranova': 'Centro commerciale Terranova: 13 minutes by car',
     
     // Footer
     'footer.contact.title': 'Contact Us',
@@ -105,7 +129,7 @@ export const translations = {
     'footer.contact.phone': 'Phone',
     'footer.contact.address': 'Address',
     'footer.links.title': 'Quick Links',
-    'footer.copyright': '© 2023 Villa del Mare. All rights reserved.',
+    'footer.copyright': '© 2023 Casa Zaratan. All rights reserved.',
     
     // Common
     'common.readMore': 'Read More',
@@ -121,7 +145,7 @@ export const translations = {
     'nav.guestInfo': 'Info Ospiti',
     
     // Home Page
-    'home.title': 'Villa del Mare',
+    'home.title': 'Casa Zaratan',
     'home.subtitle': 'Villa di lusso sul mare in Sardegna',
     'home.cta': 'Prenota Ora',
     'home.description': 'Vivi la bellezza della Sardegna nella nostra villa di lusso sul mare. Situata a pochi passi da spiagge incontaminate con vista mozzafiato sul Mediterraneo.',
@@ -140,7 +164,7 @@ export const translations = {
     // Villa Details Page
     'villaDetails.title': 'Dettagli Villa',
     'villaDetails.overview': 'Panoramica Villa',
-    'villaDetails.description': 'Villa del Mare è una proprietà di lusso sul mare con spettacolari viste sul mare. La villa offre ampi spazi abitativi, comfort moderni e accesso diretto a spiagge incontaminate.',
+    'villaDetails.description': 'Casa Zaratan è una proprietà di lusso sul mare con spettacolari viste sul mare. La villa offre ampi spazi abitativi, comfort moderni e accesso diretto a spiagge incontaminate.',
     'villaDetails.amenities.title': 'Servizi',
     'villaDetails.amenities.wifi': 'WiFi ad alta velocità',
     'villaDetails.amenities.pool': 'Piscina Privata',
@@ -162,7 +186,7 @@ export const translations = {
     'villaDetails.rooms.kitchen': 'Cucina',
     'villaDetails.rooms.kitchen.description': 'Cucina moderna, completamente attrezzata con elettrodomestici di fascia alta e zona pranzo.',
     'villaDetails.accessibility.title': 'Accessibilità',
-    'villaDetails.accessibility.description': 'Villa del Mare è progettata per essere accessibile a tutti i nostri ospiti. Il piano terra è accessibile in sedia a rotelle con accesso senza gradini dall\'area di parcheggio. La camera da letto principale e il bagno al piano terra sono dotati di caratteristiche di accessibilità.',
+    'villaDetails.accessibility.description': 'Casa Zaratan è progettata per essere accessibile a tutti i nostri ospiti. Il piano terra è accessibile in sedia a rotelle con accesso senza gradini dall\'area di parcheggio. La camera da letto principale e il bagno al piano terra sono dotati di caratteristiche di accessibilità.',
     
     // Gallery Page
     'gallery.title': 'Galleria Fotografica',
@@ -190,6 +214,20 @@ export const translations = {
     'booking.form.submit': 'Prenota Ora',
     'booking.form.termsAgree': 'Accetto i termini e le condizioni',
     
+    // House Rules
+    'houseRules.title': 'Regole della Casa',
+    'houseRules.subtitle': '10 semplici regole da seguire per godere appieno del tuo soggiorno e della magia del luogo',
+    'houseRules.rule1': 'Non sedersi su divani e poltrone con costumi/vestiti/asciugamani bagnati',
+    'houseRules.rule2': 'Fare la doccia prima di entrare in piscina per non portare crema solare, sabbia o altra sporcizia',
+    'houseRules.rule3': 'Riavvolgere la tenda se non sei in casa; il vento può alzarsi improvvisamente e strapparla',
+    'houseRules.rule4': 'Spegnere il condizionatore e le luci quando non si è in casa o quando non servono',
+    'houseRules.rule5': 'Chiudere le finestre se il condizionatore è acceso',
+    'houseRules.rule6': 'Dopo le 23:00 rispettare il sonno dei vicini e la tranquillità del luogo',
+    'houseRules.rule7': 'FARE LA RACCOLTA DIFFERENZIATA: posizionare i bidoni fuori dal portale nei giorni indicati nel calendario. Sarà applicata una penale di €100 se gli ospiti lasciano rifiuti in casa o lasciano la cucina sporca. Il cartello con i giorni precisi della raccolta è disponibile in casa',
+    'houseRules.rule8': 'La casa è non fumatori',
+    'houseRules.rule9': 'Consumare ecologicamente: non sprecare acqua ed elettricità',
+    'houseRules.rule10': '€20 a persona per soggiorno per biancheria da letto e asciugamani da pagare separatamente in contanti al check-in',
+    
     // Guest Info Page
     'guestInfo.title': 'Informazioni per gli Ospiti',
     'guestInfo.checkIn.title': 'Check-in & Check-out',
@@ -205,11 +243,21 @@ export const translations = {
     'guestInfo.cancellation.description': 'Cancellazione gratuita fino a 30 giorni prima del check-in. Se cancellato meno di 30 giorni prima del check-in, verrà rimborsato il 50% dell\'importo totale.',
     'guestInfo.localGuide.title': 'Guida Locale',
     'guestInfo.localGuide.beaches.title': 'Migliori Spiagge',
-    'guestInfo.localGuide.beaches.description': 'Esplora le bellissime spiagge nelle vicinanze, tra cui La Pelosa, Cala Brandinchi e Lu Impostu.',
+    'guestInfo.localGuide.beaches.description': 'Esplora le bellissime spiagge nelle vicinanze, tra cui Bados, Cala Moresca e Costa Smeralda: Capriccioli.',
     'guestInfo.localGuide.restaurants.title': 'Ristoranti Consigliati',
-    'guestInfo.localGuide.restaurants.description': 'Assapora la cucina locale nei nostri ristoranti consigliati, tra cui La Pinnetta, Il Pescatore e Da Tonino.',
+    'guestInfo.localGuide.restaurants.description': 'Assapora la cucina locale nei nostri ristoranti consigliati a Pittulongu, Golfo Aranci, Olbia e San Pantaleo.',
     'guestInfo.localGuide.attractions.title': 'Attrazioni Locali',
-    'guestInfo.localGuide.attractions.description': 'Visita le antiche rovine di Tharros, fai un\'escursione in barca all\'Arcipelago della Maddalena o esplora le grotte di Nettuno.',
+    'guestInfo.localGuide.attractions.description': 'Fai un tour in barca all\'Isola di Tavolara o esplora le bellissime spiagge della Sardegna.',
+    
+    // History Section
+    'history.title': 'La Storia di Zaratan',
+    'history.description': 'Scopri il leggendario mostro marino che ha ispirato il nome della villa.',
+    
+    // Local Services
+    'services.title': 'Servizi Locali e Negozi',
+    'services.nearby': 'Piccolo negozio di alimentari a pochi passi',
+    'services.gallura': 'Centro commerciale Gallura: 7 minuti in auto',
+    'services.terranova': 'Centro commerciale Terranova: 13 minuti in auto',
     
     // Footer
     'footer.contact.title': 'Contattaci',
@@ -217,7 +265,7 @@ export const translations = {
     'footer.contact.phone': 'Telefono',
     'footer.contact.address': 'Indirizzo',
     'footer.links.title': 'Link Rapidi',
-    'footer.copyright': '© 2023 Villa del Mare. Tutti i diritti riservati.',
+    'footer.copyright': '© 2023 Casa Zaratan. Tutti i diritti riservati.',
     
     // Common
     'common.readMore': 'Leggi di Più',

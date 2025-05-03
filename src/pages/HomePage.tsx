@@ -22,8 +22,11 @@ const HomePage = () => {
           <h1 className="text-4xl md:text-6xl font-bold font-serif mb-4 animate-fade-in">
             {t('home.title')}
           </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl animate-fade-in">
+          <p className="text-xl md:text-2xl mb-3 max-w-2xl animate-fade-in">
             {t('home.subtitle')}
+          </p>
+          <p className="text-lg md:text-xl mb-8 animate-fade-in">
+            Via Mar di Bering 4, Pittulongu
           </p>
           <Button asChild size="lg" className="animate-fade-in">
             <Link to="/booking">
@@ -109,8 +112,47 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Gallery Preview */}
+      {/* History & Story */}
       <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold font-serif mb-8 text-center text-gray-900">
+              The History of Zaratan
+            </h2>
+            <div className="prose max-w-none mx-auto text-gray-600">
+              <p className="mb-4">
+                Whale Island or Zaratan is a legendary sea monster, in the form of a huge whale or turtle. 
+                Its size is such that sailors can mistake it for an island and land there. If the Zaratan remains at 
+                the water's edge for a long time, its back can become covered with vegetation.
+              </p>
+              <p className="mb-4">
+                The myth of an island-sized sea monster, which could be mistaken for an island by sailors, 
+                dates back at least to Norse mythology (the Örvar-Odds Saga and the Konungs skuggsjá) and 
+                unites Zaratan with other famous sea monsters, especially the Kraken. However, the Kraken is 
+                usually not depicted as a fish, but as an octopus or crab.
+              </p>
+              <p className="mb-4">
+                An island whale appears in One Thousand and One Nights and meets Sindbad on his first voyage. 
+                The first reference to this monster in a non-fiction work dates back to about the same time, 
+                that is, in the ninth century. Al-Jahiz, an Arab zoologist, noted in his Book of animals:
+              </p>
+              <blockquote className="italic border-l-4 border-marea-300 pl-4 py-2 my-4">
+                'As for Zaratan, I have never met anyone who has seen it with their own eyes. There are sailors who 
+                claim to have gone to certain islands, to see wooded valleys and cracks in the rock, and to have 
+                landed to light a great fire; and that when the heat of the flames had reached the spine of the Zaratan, 
+                he began to dive into the water with them above him, and with all the plants that grew there, until only 
+                those able to swim could save themselves. It goes beyond even the bravest and most imaginative fictions.'
+              </blockquote>
+              <p className="text-center text-lg font-serif italic">
+                And you, dear guests, can you see the Zaratan?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Preview */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             <h2 className="text-3xl font-bold font-serif text-gray-900">
@@ -121,39 +163,60 @@ const HomePage = () => {
             </Link>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Image 1 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Image 1 - Interior */}
             <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg shadow-soft">
               <img 
-                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e"
-                alt="Villa View"
+                src="/images/casa_zaratan_1.jpg"
+                alt="Interior View"
                 className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
+              <div className="p-2 bg-white">
+                <p className="text-gray-700 font-medium">Interior View</p>
+              </div>
             </div>
             
-            {/* Image 2 */}
+            {/* Image 2 - Garden */}
             <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg shadow-soft">
               <img 
-                src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb"
-                alt="Villa Pool"
+                src="/images/casa_zaratan_2.jpg"
+                alt="Garden View"
                 className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
+              <div className="p-2 bg-white">
+                <p className="text-gray-700 font-medium">Garden View</p>
+              </div>
             </div>
             
-            {/* Image 3 */}
+            {/* Image 3 - Pool */}
             <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg shadow-soft">
               <img 
-                src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"
-                alt="Villa Interior"
+                src="/images/casa_zaratan_3.jpg"
+                alt="Pool Area"
                 className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
+              <div className="p-2 bg-white">
+                <p className="text-gray-700 font-medium">Pool Area</p>
+              </div>
+            </div>
+            
+            {/* Image 4 - Sea View */}
+            <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg shadow-soft">
+              <img 
+                src="/images/casa_zaratan_4.jpg"
+                alt="Sea View"
+                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+              />
+              <div className="p-2 bg-white">
+                <p className="text-gray-700 font-medium">Sea View</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Location */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="lg:w-1/2 lg:pr-12 mb-8 lg:mb-0">
@@ -200,7 +263,7 @@ const HomePage = () => {
             Ready for an unforgettable vacation?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Book your stay at Villa del Mare today and experience the beauty of Sardinia.
+            Book your stay at Casa Zaratan today and experience the beauty of Sardinia.
           </p>
           <Button size="lg" variant="secondary" asChild>
             <Link to="/booking">

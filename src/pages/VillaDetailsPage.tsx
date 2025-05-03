@@ -10,6 +10,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import HouseRules from "@/components/HouseRules";
 
 const VillaDetailsPage = () => {
   const { t } = useLanguage();
@@ -26,7 +27,7 @@ const VillaDetailsPage = () => {
   return (
     <>
       <SEO 
-        title={`${t('villaDetails.title')} | Villa del Mare`}
+        title={`${t('villaDetails.title')} | Casa Zaratan`}
         description={t('villaDetails.description')}
       />
       
@@ -34,10 +35,10 @@ const VillaDetailsPage = () => {
       <section className="py-16 bg-marea-600 text-white">
         <div className="container mx-auto px-4">
           <h1 className="text-3xl md:text-5xl font-bold font-serif mb-4">
-            {t('villaDetails.title')}
+            Casa Zaratan
           </h1>
           <p className="text-xl max-w-3xl">
-            {t('villaDetails.description')}
+            Via Mar di Bering 4, Pittulongu
           </p>
         </div>
       </section>
@@ -48,24 +49,32 @@ const VillaDetailsPage = () => {
           <div className="flex flex-col md:flex-row gap-8">
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold font-serif mb-6">
-                {t('villaDetails.overview')}
+                Villa Overview
               </h2>
               <div className="prose max-w-none text-gray-600">
                 <p className="mb-4">
-                  Villa del Mare is a luxurious beachfront property located on the pristine coast of Sardinia, offering an unparalleled vacation experience. The villa spans over 350 square meters with spacious interiors designed with both comfort and elegance in mind.
+                  Casa Zaratan is a luxurious beachfront property located on the pristine coast of Sardinia, offering an unparalleled vacation experience. The villa spans over 350 square meters with spacious interiors designed with both comfort and elegance in mind.
                 </p>
                 <p className="mb-4">
-                  The property features 3 bedrooms accommodating up to 8 guests, a large living room with panoramic sea views, a fully equipped modern kitchen, and multiple outdoor spaces perfect for relaxation and entertainment.
+                  The property features spacious bedrooms, a large living room with panoramic sea views, a fully equipped modern kitchen, and multiple outdoor spaces perfect for relaxation and entertainment.
                 </p>
                 <p>
-                  Situated just steps from the beach, the villa offers direct access to crystal-clear waters and is surrounded by lush Mediterranean gardens, creating a private oasis for your holiday.
+                  Situated just steps from the beach, the villa offers easy access to crystal-clear waters and is surrounded by lush Mediterranean gardens, creating a private oasis for your holiday.
                 </p>
+                <div className="mt-8 bg-marea-50 p-4 rounded-lg border border-marea-100">
+                  <h3 className="font-bold text-marea-700 mb-2">Important Information</h3>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li><span className="font-semibold">WIFI SSID:</span> Zyxel_AA41</li>
+                    <li><span className="font-semibold">Wireless Password:</span> 48KT47BX4D</li>
+                    <li><span className="font-semibold">Emergency Number:</span> 112 (Single European number for emergencies: ambulances, police, carabinieri, fire brigade)</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="md:w-1/2">
               <div className="rounded-lg overflow-hidden shadow-lg h-full">
                 <img 
-                  src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21" 
+                  src="/images/casa_zaratan_1.jpg" 
                   alt="Villa Overview" 
                   className="w-full h-full object-cover"
                 />
@@ -74,6 +83,9 @@ const VillaDetailsPage = () => {
           </div>
         </div>
       </section>
+
+      {/* House Rules */}
+      <HouseRules />
 
       {/* Amenities */}
       <section className="py-16 bg-gray-50">
@@ -107,7 +119,7 @@ const VillaDetailsPage = () => {
             {/* Living Room */}
             <div className="bg-white rounded-lg shadow-soft overflow-hidden hover-scale">
               <img 
-                src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb" 
+                src="/images/casa_zaratan_1.jpg" 
                 alt="Living Room" 
                 className="w-full h-48 object-cover"
               />
@@ -130,7 +142,7 @@ const VillaDetailsPage = () => {
             {/* Master Bedroom */}
             <div className="bg-white rounded-lg shadow-soft overflow-hidden hover-scale">
               <img 
-                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e" 
+                src="/images/casa_zaratan_2.jpg" 
                 alt="Master Bedroom" 
                 className="w-full h-48 object-cover"
               />
@@ -153,7 +165,7 @@ const VillaDetailsPage = () => {
             {/* Kitchen */}
             <div className="bg-white rounded-lg shadow-soft overflow-hidden hover-scale">
               <img 
-                src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21" 
+                src="/images/casa_zaratan_3.jpg" 
                 alt="Kitchen" 
                 className="w-full h-48 object-cover"
               />
@@ -176,40 +188,6 @@ const VillaDetailsPage = () => {
         </div>
       </section>
 
-      {/* Accessibility */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold font-serif mb-8 text-center">
-            {t('villaDetails.accessibility.title')}
-          </h2>
-          <div className="bg-white p-8 rounded-lg shadow-soft">
-            <div className="flex items-start">
-              <div className="mr-4 mt-1">
-                <Accessibility className="w-6 h-6 text-marea-600" />
-              </div>
-              <div>
-                <p className="text-gray-600">
-                  {t('villaDetails.accessibility.description')}
-                </p>
-                <p className="mt-4 text-gray-600">
-                  Additional accessibility features include:
-                </p>
-                <ul className="list-disc list-inside mt-2 text-gray-600">
-                  <li>Wider doorways in ground floor areas</li>
-                  <li>Grab bars in ground floor bathroom</li>
-                  <li>Step-free shower on ground floor</li>
-                  <li>Exterior pathway lighting</li>
-                  <li>Elevator access to upper floors</li>
-                </ul>
-                <p className="mt-4 text-gray-600">
-                  Please contact us in advance if you have specific accessibility requirements, and we'll do our best to accommodate your needs.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
@@ -218,33 +196,33 @@ const VillaDetailsPage = () => {
           </h2>
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger>How many guests can the villa accommodate?</AccordionTrigger>
+              <AccordionTrigger>What amenities does Casa Zaratan offer?</AccordionTrigger>
               <AccordionContent>
-                Villa del Mare can comfortably accommodate up to 8 guests with 3 bedrooms and sofa beds in the living area.
+                Casa Zaratan features a private pool, modern fully equipped kitchen, comfortable bedrooms with premium linens, high-speed WiFi (Zyxel_AA41), air conditioning, and easy access to nearby beaches.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger>Is the villa suitable for children?</AccordionTrigger>
               <AccordionContent>
-                Yes, the villa is family-friendly with amenities suitable for children such as a secure garden area and shallow pool section. We can provide cribs and high chairs upon request.
+                Yes, Casa Zaratan is family-friendly with amenities suitable for children such as a secure garden area and pool. We can provide additional items for children upon request.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
               <AccordionTrigger>How close is the beach?</AccordionTrigger>
               <AccordionContent>
-                The villa offers direct beach access. A private path leads from the villa's garden directly to the beach, which is approximately 50 meters away.
+                The nearest beach is approximately 1.5 km from the villa. Bados beach has a café and restaurant on site and can be reached by a short car ride or bus connection.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
               <AccordionTrigger>Is there parking available?</AccordionTrigger>
               <AccordionContent>
-                Yes, the villa provides free private parking with space for up to 3 vehicles.
+                Yes, Casa Zaratan provides free private parking on the premises.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
               <AccordionTrigger>What is included in the rental price?</AccordionTrigger>
               <AccordionContent>
-                The rental price includes accommodation, utilities (water, electricity, gas), WiFi, weekly cleaning service, and bed linens and towels. Additional services such as daily cleaning, private chef, or airport transfers are available for an extra charge.
+                The rental price includes accommodation, utilities (water, electricity, gas), and WiFi. Bed linens and towels cost €20 per person per stay, to be paid in cash upon check-in.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -255,7 +233,7 @@ const VillaDetailsPage = () => {
       <section className="py-16 bg-marea-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold font-serif mb-6">
-            Ready to experience Villa del Mare?
+            Ready to experience Casa Zaratan?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Book your dream vacation in Sardinia now and enjoy all that our luxury villa has to offer.

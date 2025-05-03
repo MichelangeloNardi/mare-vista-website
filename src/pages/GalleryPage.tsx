@@ -10,38 +10,32 @@ const GalleryPage = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const galleryCategories = [
-    { id: "livingRoom", name: t('gallery.livingRoom') },
-    { id: "bedrooms", name: t('gallery.bedrooms') },
-    { id: "kitchen", name: t('gallery.kitchen') },
-    { id: "outdoor", name: t('gallery.outdoor') },
-    { id: "views", name: t('gallery.views') },
+    { id: "interior", name: "Interior" },
+    { id: "garden", name: "Garden" },
+    { id: "pool", name: "Pool" },
+    { id: "nearby", name: "Nearby Sea" },
   ];
 
   const galleryImages = {
-    livingRoom: [
-      { src: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21", alt: "Living Room Sea View" },
-      { src: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb", alt: "Living Room Lounge" },
-      { src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e", alt: "Living Room Dining Area" },
+    interior: [
+      { src: "/images/casa_zaratan_1.jpg", alt: "Living Room" },
+      { src: "/images/casa_zaratan_2.jpg", alt: "Master Bedroom" },
+      { src: "/images/casa_zaratan_3.jpg", alt: "Kitchen" },
     ],
-    bedrooms: [
-      { src: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21", alt: "Master Bedroom" },
-      { src: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb", alt: "Second Bedroom" },
-      { src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e", alt: "Third Bedroom" },
+    garden: [
+      { src: "/images/casa_zaratan_1.jpg", alt: "Garden View" },
+      { src: "/images/casa_zaratan_2.jpg", alt: "Outdoor Dining Area" },
+      { src: "/images/casa_zaratan_3.jpg", alt: "Garden Terrace" },
     ],
-    kitchen: [
-      { src: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21", alt: "Kitchen Main View" },
-      { src: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb", alt: "Kitchen Dining Area" },
-      { src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e", alt: "Kitchen Appliances" },
+    pool: [
+      { src: "/images/casa_zaratan_3.jpg", alt: "Pool View" },
+      { src: "/images/casa_zaratan_4.jpg", alt: "Pool Lounge Area" },
+      { src: "/images/casa_zaratan_1.jpg", alt: "Pool at Sunset" },
     ],
-    outdoor: [
-      { src: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21", alt: "Pool Area" },
-      { src: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb", alt: "Garden" },
-      { src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e", alt: "Terrace" },
-    ],
-    views: [
-      { src: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21", alt: "Sea View" },
-      { src: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb", alt: "Beach View" },
-      { src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e", alt: "Sunset View" },
+    nearby: [
+      { src: "/images/casa_zaratan_4.jpg", alt: "Sea View at Sunset" },
+      { src: "/images/casa_zaratan_3.jpg", alt: "Beach View" },
+      { src: "/images/casa_zaratan_2.jpg", alt: "Coastal Path" },
     ],
   };
 
@@ -56,18 +50,18 @@ const GalleryPage = () => {
   return (
     <>
       <SEO 
-        title={`${t('gallery.title')} | Villa del Mare`}
-        description="Browse our gallery of Villa del Mare - luxury beachfront villa in Sardinia."
+        title={`${t('gallery.title')} | Casa Zaratan`}
+        description="Browse our gallery of Casa Zaratan - luxury villa in Sardinia."
       />
       
       {/* Header */}
       <section className="py-16 bg-marea-600 text-white">
         <div className="container mx-auto px-4">
           <h1 className="text-3xl md:text-5xl font-bold font-serif mb-4">
-            {t('gallery.title')}
+            Photo Gallery
           </h1>
           <p className="text-xl max-w-3xl">
-            Explore our beautiful villa through our image gallery. Click on any image to enlarge.
+            Explore Casa Zaratan through our image gallery. Click on any image to enlarge.
           </p>
         </div>
       </section>
@@ -75,7 +69,7 @@ const GalleryPage = () => {
       {/* Gallery */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <Tabs defaultValue="livingRoom" className="w-full">
+          <Tabs defaultValue="interior" className="w-full">
             <div className="flex justify-center mb-8">
               <TabsList className="overflow-x-auto sm:overflow-visible grid sm:grid-flow-col gap-4">
                 {galleryCategories.map((category) => (
@@ -119,7 +113,7 @@ const GalleryPage = () => {
           {selectedImage && (
             <img 
               src={selectedImage} 
-              alt="Villa del Mare" 
+              alt="Casa Zaratan" 
               className="w-full h-auto rounded-lg"
             />
           )}
