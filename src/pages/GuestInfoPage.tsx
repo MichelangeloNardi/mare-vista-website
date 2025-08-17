@@ -265,7 +265,7 @@ const GuestInfoPage = () => {
                     <h4 className="font-semibold mb-2">Antonello Nonne</h4>
                     <div className="flex items-center mt-1">
                       <Phone className="text-marea-600 w-4 h-4 mr-1" />
-                      <span className="text-gray-600 text-sm">+39 348 854 4850 (FB)</span>
+                      <span className="text-gray-600 text-sm"></span>
                     </div>
                   </div>
                   
@@ -273,7 +273,7 @@ const GuestInfoPage = () => {
                     <h4 className="font-semibold mb-2">Aldo and Silvia (Olbia)</h4>
                     <div className="flex items-center mt-1">
                       <Phone className="text-marea-600 w-4 h-4 mr-1" />
-                      <span className="text-gray-600 text-sm">+39 340 972 940</span>
+                      <span className="text-gray-600 text-sm"></span>
                     </div>
                   </div>
                   

@@ -18,9 +18,9 @@ const GalleryPage = () => {
 
   const galleryImages = {
     interior: [
-      { src: "/images/casa_zaratan_1.jpg", alt: "Living Room" },
-      { src: "/images/casa_zaratan_2.jpg", alt: "Master Bedroom" },
-      { src: "/images/casa_zaratan_3.jpg", alt: "Kitchen" },
+      { src: "/images/soggiorno1(1).png", alt: "Living Room" },
+      { src: "/images/soggiorno1(2).png", alt: "Living Room" },
+      { src: "/images/camera1(1).png", alt: "Master Bedroom" },
     ],
     garden: [
       { src: "/images/casa_zaratan_1.jpg", alt: "Garden View" },

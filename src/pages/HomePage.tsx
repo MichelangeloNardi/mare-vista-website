@@ -26,7 +26,7 @@ const HomePage = () => {
             {t('home.subtitle')}
           </p>
           <p className="text-lg md:text-xl mb-8 animate-fade-in">
-            Via Mar di Bering 4, Pittulongu
+            Pittulongu, Olbia
           </p>
           <Button asChild size="lg" className="animate-fade-in">
             <Link to="/booking">
@@ -167,7 +167,7 @@ const HomePage = () => {
             {/* Image 1 - Interior */}
             <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg shadow-soft">
               <img 
-                src="/images/casa_zaratan_1.jpg"
+                src="/images/soggiorno1.jpg"
                 alt="Interior View"
                 className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -179,7 +179,7 @@ const HomePage = () => {
             {/* Image 2 - Garden */}
             <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg shadow-soft">
               <img 
-                src="/images/casa_zaratan_2.jpg"
+                src="/images/giardino.jpg"
                 alt="Garden View"
                 className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -191,7 +191,7 @@ const HomePage = () => {
             {/* Image 3 - Pool */}
             <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg shadow-soft">
               <img 
-                src="/images/casa_zaratan_3.jpg"
+                src="/images/piscina.jpg"
                 alt="Pool Area"
                 className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -203,7 +203,7 @@ const HomePage = () => {
             {/* Image 4 - Sea View */}
             <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg shadow-soft">
               <img 
-                src="/images/casa_zaratan_4.jpg"
+                src="/images/mare1.jpg"
                 alt="Sea View"
                 className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />

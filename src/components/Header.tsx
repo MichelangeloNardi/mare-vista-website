@@ -29,7 +29,7 @@ const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <span className="font-serif text-2xl font-bold text-primary">Villa del Mare</span>
+            <span className="font-serif text-2xl font-bold text-primary">Casa Zaratan</span>
           </Link>
 
           {/* Desktop Navigation */}

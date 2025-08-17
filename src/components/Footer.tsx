@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About */}
           <div>
-            <h3 className="text-xl font-serif font-bold mb-4">Villa del Mare</h3>
+            <h3 className="text-xl font-serif font-bold mb-4">Casa Zaratan</h3>
             <p className="mb-4 text-gray-300">
               Luxury beachfront villa in Sardinia with stunning views and modern amenities.
             </p>
@@ -40,14 +40,6 @@ const Footer = () => {
               <li>
                 <span className="block text-sm font-medium text-white">{t('footer.contact.phone')}</span>
                 <a href="tel:+39123456789" className="hover:text-marea-300 transition-colors">+39 123 456 789</a>
-              </li>
-              <li>
-                <span className="block text-sm font-medium text-white">{t('footer.contact.address')}</span>
-                <address className="not-italic">
-                  Via del Mare 123<br />
-                  07026 Olbia<br />
-                  Sardegna, Italia
-                </address>
               </li>
             </ul>
           </div>

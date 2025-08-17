@@ -16,7 +16,7 @@ const NotFoundPage = () => {
   return (
     <>
       <SEO 
-        title="Page Not Found | Villa del Mare"
+        title="Page Not Found | Casa Zaratan"
         description="The requested page could not be found."
       />
       

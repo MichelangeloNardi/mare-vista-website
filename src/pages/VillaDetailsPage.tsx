@@ -38,7 +38,7 @@ const VillaDetailsPage = () => {
             Casa Zaratan
           </h1>
           <p className="text-xl max-w-3xl">
-            Via Mar di Bering 4, Pittulongu
+            Pittulongu, Olbia, Sardinia
           </p>
         </div>
       </section>
@@ -64,8 +64,6 @@ const VillaDetailsPage = () => {
                 <div className="mt-8 bg-marea-50 p-4 rounded-lg border border-marea-100">
                   <h3 className="font-bold text-marea-700 mb-2">Important Information</h3>
                   <ul className="list-disc list-inside space-y-2">
-                    <li><span className="font-semibold">WIFI SSID:</span> Zyxel_AA41</li>
-                    <li><span className="font-semibold">Wireless Password:</span> 48KT47BX4D</li>
                     <li><span className="font-semibold">Emergency Number:</span> 112 (Single European number for emergencies: ambulances, police, carabinieri, fire brigade)</li>
                   </ul>
                 </div>
@@ -74,7 +72,7 @@ const VillaDetailsPage = () => {
             <div className="md:w-1/2">
               <div className="rounded-lg overflow-hidden shadow-lg h-full">
                 <img 
-                  src="/images/casa_zaratan_1.jpg" 
+                  src="/images/casa.png" 
                   alt="Villa Overview" 
                   className="w-full h-full object-cover"
                 />
