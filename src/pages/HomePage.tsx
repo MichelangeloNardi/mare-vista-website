@@ -1,4 +1,5 @@
 
+import React from "react";
 import { useLanguage } from "@/context/LanguageContext";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -16,12 +17,14 @@ const HomePage = () => {
   const [yearsCount, setYearsActive] = useCountUp(15);
   const [reviewsCount, setReviewsActive] = useCountUp(98);
 
-  // Trigger counters when stats section comes into view
-  if (statsInView && guestsCount === 0) {
-    setGuestsActive(true);
-    setYearsActive(true);
-    setReviewsActive(true);
-  }
+  // Trigger counters when stats section comes into view - moved to useEffect
+  React.useEffect(() => {
+    if (statsInView && guestsCount === 0) {
+      setGuestsActive(true);
+      setYearsActive(true);
+      setReviewsActive(true);
+    }
+  }, [statsInView, guestsCount, setGuestsActive, setYearsActive, setReviewsActive]);
 
   return (
     <>
