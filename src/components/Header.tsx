@@ -28,7 +28,12 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center space-x-2">
+            <img 
+              src="/favicon.svg" 
+              alt="Casa Zaratan Logo" 
+              className="h-8 w-8"
+            />
             <span className="font-serif text-2xl font-bold text-primary">Casa Zaratan</span>
           </Link>
 

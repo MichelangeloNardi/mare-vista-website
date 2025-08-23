@@ -14,7 +14,7 @@ export const translations = {
     'home.cta': 'Book Now',
     'home.description': 'Experience the beauty of Sardinia in our luxury beachfront villa. Located steps from pristine beaches with breathtaking views of the Mediterranean.',
     'home.features.title': 'Villa Features',
-    'home.features.bedrooms': 'Spacious Bedrooms',
+    'home.features.bedrooms': 'Bedrooms & Bathrooms',
     'home.features.pool': 'Private Pool',
     'home.features.beach': 'Beach Access',
     'home.features.wifi': 'High-speed WiFi',

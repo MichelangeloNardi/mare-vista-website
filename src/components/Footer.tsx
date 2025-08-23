@@ -11,7 +11,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About */}
           <div>
-            <h3 className="text-xl font-serif font-bold mb-4">Casa Zaratan</h3>
+            <div className="flex items-center space-x-2 mb-4">
+              <img 
+                src="/favicon.svg" 
+                alt="Casa Zaratan Logo" 
+                className="h-6 w-6"
+              />
+              <h3 className="text-xl font-serif font-bold">Casa Zaratan</h3>
+            </div>
             <p className="mb-4 text-gray-300">
               Luxury beachfront villa in Sardinia with stunning views and modern amenities.
             </p>
