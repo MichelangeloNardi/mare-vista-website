@@ -3,6 +3,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import SEO from "@/components/SEO";
+import Reviews from "@/components/Reviews";
 import { Wifi, Home, MapPin, Waves } from "lucide-react";
 
 const HomePage = () => {
@@ -217,6 +218,9 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      {/* Reviews Section */}
+      <Reviews />
 
       {/* Location */}
       <section className="py-16 bg-white">
