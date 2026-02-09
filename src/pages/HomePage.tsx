@@ -66,7 +66,7 @@ const HomePage = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{t('home.features.bedrooms')}</h3>
                 <p className="text-gray-600">
-                  Enjoy our spacious and comfortable bedrooms with premium bedding and sea views.
+                  8 guests, 3 bedrooms, 1 double beds, 2 single beds, 2 bunk beds, 2 shower rooms, 3 WC.
                 </p>
               </div>
             </div>
